@@ -9,6 +9,10 @@ const movieSchema = new mongoose.Schema({
     actor: {
         type: String,
         default: "Not Specified"
+    },
+    director: {
+        type: String,
+        default: "Not Specified"
     }
 
 });

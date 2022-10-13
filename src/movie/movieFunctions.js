@@ -22,7 +22,7 @@ exports.readMovie = async (key, filter) => {
 
 exports.updateMovie = async (movieObject) => {
     try {
-        await Movie.updateOne({title: movieObject.title}, {$set: {actor: movieObject.actor}})
+        await Movie.updateOne({title: movieObject.title}, {$set: {actor: movieObject.actor}}, {$set: {director: movieObject.director}})
     } catch (error) {
         console.log(error)
     }
